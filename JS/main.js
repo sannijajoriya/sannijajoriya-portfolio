@@ -59,12 +59,3 @@ const typed =new Typed('.multiple-text', {
     loop: true,
 });
 
-/*-------------------------------------------------Download  --------------------------------------------*/
-document.getElementById("cv-btn").addEventListener("click", function() {
-    const link = document.createElement("a");  // Create an anchor tag dynamically
-    link.href = "assets/SanniJajoriya.pdf";   // The path to the PDF file
-    link.download = "SanniJajoriya.pdf";       // Name of the file when downloaded
-    document.body.appendChild(link);           // Append the link to the DOM
-    link.click();                              // Simulate the click to start the download
-    document.body.removeChild(link);           // Remove the link element after the click
-});
